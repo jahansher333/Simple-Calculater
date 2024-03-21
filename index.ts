@@ -2,6 +2,7 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
 
+console.log("Wellcome to my Calculater");
 const answer = await inquirer.prompt([
     {message: "Enter your first number", type:"number", name:"firstnumber"},
     {message: "Enter your second number", type:"number", name:"secondnumber"},
@@ -22,4 +23,5 @@ const answer = await inquirer.prompt([
     console.log(answer.firstnumber / answer.secondnumber);
   }else{
     console.log("error unvalid number");
-  }
+  };
+  console.log("The End'")
